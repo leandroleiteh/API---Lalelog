@@ -1,0 +1,26 @@
+package com.learning.lalelog.controller;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.learning.lalelog.domain.model.Cliente;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+
+@RestController
+public class ClienteController {
+
+	private EntityManager manager;
+	
+	@PersistenceContext
+	@GetMapping("/clientes")
+	public List<Cliente> listar() {
+		return manager.createQuery("from Cliente", Cliente.class)
+				.getResultList();
+	}
+}

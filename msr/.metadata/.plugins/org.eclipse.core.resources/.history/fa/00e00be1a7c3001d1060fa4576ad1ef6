@@ -1,0 +1,5 @@
+spring.datasource.url=jdbc:mysql://localhost3306/lalelog
+spring.datasource.username=root
+spring.datasource.password=6652
+
+

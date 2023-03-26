@@ -1,0 +1,15 @@
+package com.learning.lalelog.controller;
+
+
+@RestController
+public class ClienteController {
+
+	private EntityManager manager;
+	
+	@PersistenceContext
+	@GetMapping("/clientes")
+	public List<Cliente> listar() {
+		return manager.createQuery("from Cliente", Cliente.class)
+				.getResultList();
+	}
+}

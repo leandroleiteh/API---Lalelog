@@ -1,0 +1,14 @@
+package com.learning.lalelog;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+@SpringBootApplication
+public class LalelogApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(LalelogApiApplication.class, args);
+	}
+
+}

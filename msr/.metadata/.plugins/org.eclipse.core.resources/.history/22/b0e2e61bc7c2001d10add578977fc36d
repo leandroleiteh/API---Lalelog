@@ -1,0 +1,10 @@
+package com.learning.lalelog.domain.model;
+
+public class Cliente {
+
+	@Data
+	private Long id;
+	private String nome;
+	private String email;
+	private String telefone;
+}

@@ -1,0 +1,5 @@
+package com.learning.lalelog.repository;
+
+public class ClienteRepository {
+
+}
